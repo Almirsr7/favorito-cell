@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <title>Favorito Cell</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <header>
+            <div class="header">
+                <h1> <i>Favorito <span class="cell">Cell</i></span></h1>
+            </div>
+            <img class="banner" src="style/assets/banner.PNG" alt="banner-cell" />
+        </header>
+
+
+        <main>
+            <div class="paragraph">
+                <h1><i>Nossa história, Nossa motivação!</i></h1>
+                <p> <i>
+                        Lorem ipsum dolor sit amet       consectetur   adipisicing elit. Ad temporibus iure placeat
+                        eligendi,quisquam
+                        qui veniam accusamus harum nihil fuga unde voluptas delectus dolorum illum itaque repellat atque
+                        nemo quaerat.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad temporibus iure placeat
+                        eligendi,quisquam
+                        qui veniam accusamus harum nihil fuga unde voluptas delectus dolorum illum itaque repellat atque
+                        nemo quaerat.
+                    </i>
+                 </p>
+
+                <div class="map">
+                    <h1><i>Localize nossos serviços!</i></h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15755.661353592148!2d-36.019857!3d-9.16211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707296a3663f309%3A0x345cf3cf7e16de46!2sR.%20Jos%C3%A9%20Hort%C3%AAncio%20de%20Souza%2C%20481%20-%20Uni%C3%A3o%20dos%20Palmares%2C%20AL%2C%2057800-000!5e0!3m2!1spt-BR!2sbr!4v1726361897427!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                 <button class="send" onclick="onform()">Entre em contato!</button>
+                
+                </div>
+
+                 <footer class="footer">
+                <div class="footer-content">
+                    <p class="footer">&copy; 2024 Favorito Cell. Todos os direitos reservados.</p>
+                </div>
+            </footer>
+
+    </div>
+
+    </div>
+
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+        <input type="text" name="name" required placeholder="Digite seu nome">
+        <input type="email" name="email" required placeholder="Digite seu email...">
+        <input type="tel" name="phone" placeholder="(XX)XXXXX-XXXX">
+        <textarea placeholder="Sua dúvida aqui..."></textarea>
+        <button type="submit">Enviar</button>
+        <button type="button" class="back" onclick="offform()">Voltar</button>
+    </form>
+
+</body>
+
+<script>
+
+    function onform() {
+        document.querySelector("form").style.display = "block"
+        document.querySelector(".conteiner").style.opacity = 0.1
+    }
+
+    function offform() {
+        document.querySelector("form").style.display = "none"
+        document.querySelector(".conteiner").style.opacity = 1
+    }
+</script>
+
+</html>
